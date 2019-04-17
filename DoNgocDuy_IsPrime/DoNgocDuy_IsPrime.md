@@ -5,28 +5,34 @@
 ## Hàm đã chọn
 - link : https://github.com/phishman3579/java-algorithms-implementation/blob/master/src/com/jwetherell/algorithms/mathematics/Primes.java
 ```sh
-1   void oddEven(vector<int> &arr, int size) {
-2   	bool sorted = false;
-3   	while( ! sorted ) {
-4   		sorted = true;
-5   		for(int i = 1; i < size-1; i += 2) {//Odd 
-6   			if(arr[i] > arr[i+1]) {
-7  				swap(arr[i], arr[i+1]);
-8  				sorted = false;
-9  			}
-10  		}
-11  		for(int i = 0; i < size-1; i += 2) {//Even
-12  			if(arr[i] > arr[i+1]) {
-13  				swap(arr[i], arr[i+1]);
-14  				sorted = false;
-15  			}
-16  		}
-17  	}
-18  }
+1 public static final boolean isPrime(long number) {
+2        if (number == 1)
+3            return false;
+4        if (number < 4)
+5            return true; // 2 and 3 are prime
+6        if (number % 2 == 0)
+7            return false; // short circuit
+8        if (number < 9)
+9            return true; // we have already excluded 4, 6 and 8.
+10        // (testing for 5 & 7)
+11       if (number % 3 == 0)
+12            return false; // short circuit
+13        long r = (long) (Math.sqrt(number)); // n rounded to the greatest integer
+14        // r so that r*r<=n
+15        int f = 5;
+16        while (f <= r) {
+17            if (number % f == 0)
+18                return false;
+19            if (number % (f + 2) == 0)
+20                return false;
+21            f += 6;
+22        }
+23        return true;
+24    }
 ```
 
 ### 1. Flowchart
-
+![](flow_chart.png)
 
 ### 2. List of Road
 
