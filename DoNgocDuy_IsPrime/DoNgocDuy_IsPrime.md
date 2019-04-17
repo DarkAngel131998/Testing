@@ -37,36 +37,48 @@
 ### 2. Đường đi
 
 #### Road 1: 1 &rarr; 2 &rarr; 3 &rarr; 24
-#### Road 2: 1 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 24 &rarr; 6 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18 
-#### Road 3: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 7 &rarr; 24 &rarr; 7 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18
-#### Road 4: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 9 &rarr; 24 &rarr; 12 &rarr; 13 &rarr; 14 &rarr; 3 &rarr; 17 &rarr; 18
+#### Road 2: 1 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 24 
+#### Road 3: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 7 &rarr; 24 
+#### Road 4: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 9 &rarr; 24 
 #### Road 5: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 24 
 #### Road 6: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 18 &rarr; 24 
-#### Road 6: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 20 &rarr; 24
-#### Road 7: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 21 &rarr; 16 &rarr; 23 &rarr; 24
-#### Road 8: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 23 &rarr; 24
+#### Road 7: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 20 &rarr; 24
+#### Road 8: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 21 &rarr; 16 &rarr; 23 &rarr; 24
+#### Road 9: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 23 &rarr; 24
 
 
 ### 3. Hệ phương trình
 
-#### Road 1: number <= 1
-#### Path 2: size > 1, array already sorted
-#### Path 3: size > 1, only odd positions don't sorted
-#### Path 4: size > 1, only even positions don't sorted
-#### Path 5: size > 1, array doesn't sorted
+#### Road 1: number == 1
+#### Road 2: number != 1 && number < 4
+#### Road 3: number != 1 && number >= 4 && number % 2 == 0
+#### Road 4: number != 1 && number >= 4 && number % 2 != 0 && number < 9
+#### Road 5: number != 1 && number >= 4 && number % 2 != 0 && number >= 9 && number % 3 == 0
+#### Road 6: number != 1 && number >= 4 && number % 2 != 0 && number >= 9 && number % 3 != 0 &&  f = 5 && r = sqrt(number) && f <= r && number % f == 0 
+#### Road 7: number != 1 && number >= 4 && number % 2 != 0 && number >= 9 && number % 3 != 0 &&  f = 5 && r = sqrt(number) && f <= r && number % f != 0 && number % (f+2) == 0 
+#### Road 8: number != 1 && number >= 4 && number % 2 != 0 && number >= 9 && number % 3 != 0 &&  f = 5 && r = sqrt(number) && f <= r && number % f != 0 && number % (f+2) != 0 && f += 6 && f > r
+#### Road 9: number != 1 && number >= 4 && number % 2 != 0 && number >= 9 && number % 3 != 0 &&  f = 5 && r = sqrt(number) && f > r
 
-### 4. Generate Test Case
+### 4. Tạo Test Case
 
-#### Path 1: n = 0, a[ ] = { }
-#### Path 2: n = 5, a[ ] = {2, 15, 18, 53, 74}
-#### Path 3: n = 6, a[ ] = {17, 2, 89, 5, 10, 12}
-#### Path 4: n = 9, a[ ] = {2, 41, 12, 7, 53, 51, 74, 45, 99}
-#### Path 5: n = 7, a[ ] = {89, 14, 52, 0, 16, 75, 45}
+#### Road 1: number = 1
+#### Road 2: number = 2
+#### Road 3: number = 4
+#### Road 4: number = 5
+#### Road 5: number = 15
+#### Road 6: number = 35
+#### Road 7: number = 49
+#### Road 8: number = 101
+#### Road 9: number = 23
 
-### 5. Expected Output
+### 5. Output mong đợi
 	
-#### Path 1: Nothing to print
-#### Path 2: 2, 15, 18, 53, 74
-#### Path 3: 2, 5, 10, 12, 17, 89
-#### Path 4: 2, 7, 12, 41, 45, 51, 53, 74, 99
-#### Path 5: 0, 14, 16, 45, 53, 75, 89
+#### Road 1:false
+#### Road 2:true
+#### Road 3:false
+#### Road 4:true
+#### Road 5:false
+#### Road 6:false
+#### Road 7:false
+#### Road 8:true
+#### Road 9:true
