@@ -34,18 +34,22 @@
 ### 1. Flowchart
 ![](flow_chart.png)
 
-### 2. List of Road
+### 2. Đường đi
 
-#### Road 1: 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 11 &rarr; 3 &rarr; 17 &rarr; 18
-#### Road 2: 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18 
-#### Road 3: 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 &rarr; 7 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18
-#### Road 4: 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 &rarr; 11 &rarr; 12 &rarr; 13 &rarr; 14 &rarr; 3 &rarr; 17 &rarr; 18
-#### Road 5: 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 &rarr; 7 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 13 &rarr; 14 &rarr; 3 &rarr; 17 &rarr; 18
+#### Road 1: 1 &rarr; 2 &rarr; 3 &rarr; 24
+#### Road 2: 1 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 24 &rarr; 6 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18 
+#### Road 3: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 7 &rarr; 24 &rarr; 7 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 3 &rarr; 17 &rarr; 18
+#### Road 4: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 9 &rarr; 24 &rarr; 12 &rarr; 13 &rarr; 14 &rarr; 3 &rarr; 17 &rarr; 18
+#### Road 5: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 12 &rarr; 24 
+#### Road 6: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 18 &rarr; 24 
+#### Road 6: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 20 &rarr; 24
+#### Road 7: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 17 &rarr; 19 &rarr; 21 &rarr; 16 &rarr; 23 &rarr; 24
+#### Road 8: 1 &rarr; 2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 11 &rarr; 13 &rarr; 15 &rarr; 16 &rarr; 23 &rarr; 24
 
 
-### 3. Path Conditions
+### 3. Hệ phương trình
 
-#### Path 1: size <= 1
+#### Road 1: number <= 1
 #### Path 2: size > 1, array already sorted
 #### Path 3: size > 1, only odd positions don't sorted
 #### Path 4: size > 1, only even positions don't sorted
