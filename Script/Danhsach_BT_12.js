@@ -17,7 +17,7 @@ describe('Kiểm tra hình ảnh mũi tên hiện danh sách chức năng 
         cy.get('span > .text-dark').should('be.visible').click()
         cy.get(':nth-child(2) > :nth-child(1) > .row > .col-9 > .text-dark').click()
         cy.get(':nth-child(1) > .row > .col-2 > :nth-child(2) > #optionDropdown').click()
-        cy.get(':nth-child(1) > .row > .col-2 > :nth-child(2) > #optionDropdown').should('have.class','dropdown-toggle')
+        cy.get(':nth-child(1) > .row > .col-2 > :nth-child(2) > #optionDropdown').should('not.have.class','dropdown-toggle')
         cy.get('div#dropdown_0').should('have.class','dropdown-menu dropdown-menu-right hidden-sm show')
         cy.get(':nth-child(1) > .row > .col-2 > :nth-child(2) > #optionDropdown').click()
         cy.get(':nth-child(1) > .row > .col-2 > :nth-child(2) > #optionDropdown').should('have.class','dropdown-toggle')
