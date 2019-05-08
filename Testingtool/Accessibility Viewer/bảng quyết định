@@ -1,0 +1,17 @@
+bảng quyết định:
+	Là 1 cách chính xác và gọn để mô tả logic phực tạp, xác định các điều kiện tương ứng
+	giải quyết được 2 vấn đề: tính đầy đủ và không mâu thuẫn.
+
+	CÁCH LẬP bảng:
+	1. xác định các điều kiện và giá trị của chúng
+	2. xác định số luoật tối đa
+	3. xác định các hành động
+	4. đánh số các luật nếu cần
+	5. đáng số các hành động tích hợp cho mỗi luật
+
+	Phù hợp khi:
+	Có nhiều quyết định đưa ra
+	có các quan hệ logic quan trọng giữa các biến đầu vào
+	có quan hệ nhân quả
+
+*Z3: contrainls solver (phần mền tính các công thức)... bài thi sẽ có 1 bài bảng quyết định 
