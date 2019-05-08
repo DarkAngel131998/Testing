@@ -16,6 +16,8 @@
 
 *    Finally, it is versatile enough to cover a great deal of use cases, ranging from a simple command line scanner utility, to a global high performance grid of scanners, to a Ruby library allowing for scripted audits, to a multi-user multi-scan web collaboration platform.
 
+## link video hướng dẫn: https://www.youtube.com/watch?v=9y9BzDQSlYY&t=285s
+
 ## Cách cài đặt Arachni
 ### 1. Vào trang web chứa công cụ
 ```
